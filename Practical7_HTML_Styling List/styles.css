@@ -1,0 +1,13 @@
+body {
+    background-color:lawngreen;
+}
+h1 {
+    color:black;
+}
+li {
+    color:firebrick ;
+}
+
+.events:hover {
+    color: blue;
+}
