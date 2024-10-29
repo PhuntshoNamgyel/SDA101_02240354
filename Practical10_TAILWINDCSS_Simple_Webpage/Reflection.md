@@ -25,3 +25,7 @@
 ## Challenges Faced and How I Overcame Them
 
 * Styling Adjustments for Small Screens: It was challenging to maintain readability and spacing on smaller screens. To address this, I adjusted font sizes and padding for different screen sizes with Tailwind’s responsive classes (e.g., md:text-xl).
+
+# Screenshot
+
+![Challenge](Challenge.png)
