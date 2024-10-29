@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form Validation</title>
+    <style>
+        /* Center the form in the viewport */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: lightyellow;
+            margin: 0;
+        }
+
+        /* Form container styling */
+        #registrationForm {
+            background-color: #ffffff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        /* Header styling */
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Label and input styling */
+        label {
+            font-weight: bold;
+            color: #555;
+            margin-top: 10px;
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        /* Error and valid message styling */
+        .error {
+            color: #ff4d4d;
+            font-size: 0.9em;
+        }
+
+        .valid {
+            color: #28a745;
+            font-size: 0.9em;
+        }
+
+        /* Button styling */
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        button:not(:disabled):hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form id="registrationForm">
+        <h2>Registration Form</h2>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <span id="usernameError" class="error"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <span id="emailError" class="error"></span>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <span id="passwordError" class="error"></span>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword">
+        <span id="confirmPasswordError" class="error"></span>
+
+        <button type="submit" id="submitBtn" disabled>Submit</button>
+    </form>
+
+    <script src="validation.js"></script>
+</body>
+</html>
