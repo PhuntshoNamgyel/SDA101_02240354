@@ -1,6 +1,6 @@
 # Main Concepts Applied
 
-In this project, I focused on several core design principles:
+In this assignment, we focused on several core design principles:
 
 1. Visual Consistency: Ensured that the replicated design maintained the original’s color palette, typography, and layout to create a cohesive look.
 
