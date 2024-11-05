@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLBB Heroes</title>
+    <style>
+        /* Center the cards and make them responsive */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #333;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Random MLBB Heroes</h1> <!-- This title is fine as an overall title for the page -->
+
+    <div class="card-container">
+        <my-card
+            footer="@ 2024 Phuntsho Namgyel"
+            style="--card-background: #ffffff; --card-border-color: #3498db; --card-radius: 12px; --card-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px;">
+        </my-card>
+    </div>
+
+    <script src="card.js"></script>
+</body>
+</html>
